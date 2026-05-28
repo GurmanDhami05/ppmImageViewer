@@ -4,7 +4,6 @@
 
 int main()
 {
-    printf("hello\n");
 
     FILE *in = stdin;
     char *pthroway = calloc(1000, sizeof(char));
@@ -18,7 +17,6 @@ int main()
     int width = -1;
     int height = -1;
     sscanf(pdim, "%d %d\n", &width, &height);
-    printf("width=%d height=%d", width, height);
     free(pdim);
     SDL_Window *pwindow =
         SDL_CreateWindow("Image Viewer", SDL_WINDOWPOS_CENTERED,
